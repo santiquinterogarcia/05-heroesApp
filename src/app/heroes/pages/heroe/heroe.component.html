@@ -1,1 +1,16 @@
-<p>heroe works!</p>
+<mat-grid-list cols="1" *ngIf="!heroe; else divHeroe" rowHeight="2:1">
+  <mat-grid-tile>
+    <mat-spinner></mat-spinner>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<ng-template #divHeroe>
+  <button mat-mini-fab color="accent" (click)="volver()">
+    <mat-icon>keyboard_backspace</mat-icon>
+  </button>
+  <div fxLayout="row wrap" fxLayoutAlign="center">
+    <div fxFlex.xs="80" fxFlex.sm="40" fxFlex.lg="20" fxFlex="20">
+      <app-heroe-card-component [heroe]="heroe"></app-heroe-card-component>
+    </div>
+  </div>
+</ng-template>

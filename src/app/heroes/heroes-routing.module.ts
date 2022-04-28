@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ListarComponent } from './pages/listar/listar.component';
+import { ListadoComponent } from './pages/listado/listado.component';
 import { AgregarComponent } from './pages/agregar/agregar.component';
 import { BuscarComponent } from './pages/buscar/buscar.component';
 import { HeroeComponent } from './pages/heroe/heroe.component';
@@ -13,7 +13,7 @@ const routes: Routes = [
     children: [
       {
         path: 'listado',
-        component: ListarComponent,
+        component: ListadoComponent,
       },
       {
         path: 'agregar',
