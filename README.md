@@ -1,5 +1,12 @@
 # HeroesApp
 
+Para que la aplicación funcione:
+
+1. Se debe descomprimir el rar del servidor "05-heroesServer.rar" y luego sacar su carpeta del proyecto.
+2. Se debe instalar el paquete [json-server](https://www.npmjs.com/package/json-server) `npm install -g json-server`
+3. Habiendo puesto la terminal en la ruta del archivo, se debe ejecutar el servidor con el siguiente comando `json-server --watch db.json`
+4. Usar las rutas o url del servidor en el proyecto correctamente, recomendación: probar en Postman.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
 ## Development server
